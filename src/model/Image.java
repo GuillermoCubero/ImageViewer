@@ -1,7 +1,9 @@
 package model;
 
 public interface Image {
-    Object bitmap();
+    <E> E bitmap();
+
     Image prev();
+
     Image next();
 }
