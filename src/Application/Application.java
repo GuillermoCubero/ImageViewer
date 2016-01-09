@@ -49,7 +49,7 @@ public class Application extends JFrame {
 
     private void deployUI() throws IOException {
         this.getContentPane().add(toolbar(), BorderLayout.SOUTH);
-        this.getContentPane().add(imagePanel(imageIn("PATH")));
+        this.getContentPane().add(imagePanel(imageIn("C:\\Users\\gabri\\Pictures\\Screenshots")));
         createCommands();
     }
 

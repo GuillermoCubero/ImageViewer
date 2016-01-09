@@ -3,9 +3,6 @@ package control;
 import model.Image;
 import ui.ImageDislay;
 
-/**
- * Created by Gabriel on 30/11/2015.
- */
 public class PrevImageCommand implements Command {
     private final ImageDislay imageDislay;
 
@@ -22,7 +19,7 @@ public class PrevImageCommand implements Command {
         return currentImage().prev();
     }
 
-    public Image currentImage(){
+    public Image currentImage() {
         return imageDislay.image();
     }
 }
