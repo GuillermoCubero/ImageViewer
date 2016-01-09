@@ -20,7 +20,7 @@ public class NextImageCommand implements Command {
         return currentImage().next();
     }
 
-    public Image currentImage(){
+    public Image currentImage() {
         return imageDislay.image();
     }
 }
