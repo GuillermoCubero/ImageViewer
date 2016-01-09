@@ -23,7 +23,7 @@ public class ImagePanel extends JPanel implements ImageDislay {
     }
 
     @Override
-    protected void paintComponent(Graphics g){
+    protected void paintComponent(Graphics g) {
         g.drawImage(bitmap(), 0, 0, this);
     }
 
