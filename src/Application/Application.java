@@ -3,7 +3,6 @@ package application;
 import control.Command;
 import control.NextImageCommand;
 import control.PrevImageCommand;
-import model.*;
 
 import javax.swing.*;
 import java.awt.*;
@@ -16,15 +15,15 @@ public class Application extends JFrame {
     private HashMap<String, Command> commands = new HashMap<>();
     private ImagePanel panel;
 
-    public static void main(String[] args) throws IOException {
-        new Application().setVisible(true);
-    }
-
     public Application() throws IOException {
         this.setTitle("ImageViewer");
         this.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
         this.setMinimumSize(new Dimension(500, 500));
         deployUI();
+    }
+
+    public static void main(String[] args) throws IOException {
+        new Application().setVisible(true);
     }
 
     private JPanel toolbar() {
@@ -34,7 +33,7 @@ public class Application extends JFrame {
         return panel;
     }
 
-    private void createCommands(){
+    private void createCommands() {
         commands.put("prev", prevCommand());
         commands.put("next", nextCommand());
     }

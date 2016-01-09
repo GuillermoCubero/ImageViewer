@@ -1,7 +1,7 @@
 package control;
 
 import model.Image;
-import ui.ImageDislay;
+import view.ui.ImageDislay;
 
 public class NextImageCommand implements Command {
 

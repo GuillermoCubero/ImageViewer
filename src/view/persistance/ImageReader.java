@@ -1,4 +1,4 @@
-package persistance;
+package view.persistance;
 
 import model.Image;
 
