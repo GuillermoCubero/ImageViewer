@@ -1,4 +1,4 @@
-package Application;
+package application;
 
 import model.Image;
 import view.ui.ImageDislay;
