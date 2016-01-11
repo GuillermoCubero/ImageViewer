@@ -1,4 +1,4 @@
-package APPLICATION;
+package application;
 
 import control.Command;
 import control.NextImageCommand;
