@@ -1,4 +1,4 @@
-package application;
+package Application;
 
 import control.Command;
 import control.NextImageCommand;
@@ -14,6 +14,7 @@ public class Application extends JFrame {
 
     private HashMap<String, Command> commands = new HashMap<>();
     private ImagePanel panel;
+    private static final String PATH = "";
 
     public Application() throws IOException {
         this.setTitle("ImageViewer");
@@ -48,7 +49,7 @@ public class Application extends JFrame {
 
     private void deployUI() throws IOException {
         this.getContentPane().add(toolbar(), BorderLayout.SOUTH);
-        this.getContentPane().add(imagePanel(imageIn("C:\\Users\\gabri\\Pictures\\Screenshots")));
+        this.getContentPane().add(imagePanel(imageIn(PATH)));
         createCommands();
     }
 

@@ -1,4 +1,4 @@
-package application;
+package Application;
 
 import model.Image;
 import view.persistance.ImageReader;
