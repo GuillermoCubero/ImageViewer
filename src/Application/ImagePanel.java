@@ -1,7 +1,7 @@
 package application;
 
 import model.Image;
-import ui.ImageDislay;
+import view.ui.ImageDislay;
 
 import javax.swing.*;
 import java.awt.*;
@@ -28,6 +28,6 @@ public class ImagePanel extends JPanel implements ImageDislay {
     }
 
     private BufferedImage bitmap() {
-        return (BufferedImage) image.bitmap();
+        return image.<BufferedImage>bitmap();
     }
 }
